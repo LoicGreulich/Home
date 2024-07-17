@@ -1,5 +1,61 @@
 @use "./settings";
 
 .section1 {
+  position: relative;
   height: 877px;
+  color: settings.$black;
+
+  .text-sec1 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: left;
+    padding: 60px 0 30px;
+    width: 80%;
+    margin: 0 auto;
+
+    h4 {
+      color: settings.$grey;
+      line-height: 20px;
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-right: 20px;
+    }
+
+    p {
+      line-height: 20px;
+      color: settings.$grey;
+      margin-left: 35px;
+    }
+  }
+  .img-sec1 {
+    max-width: 1100px;
+    width: 80%;
+    height: 426px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+
+    .map {
+      background: url(/Theme-maison/assets/img/image-carte.png) center/cover;
+    }
+
+    .salon-1 {
+      background: url(/Theme-maison/assets/img/salon-01.jpg) center/cover;
+      width: 90%;
+    }
+    .chambre-4 {
+      background: url(/Theme-maison/assets/img/chambre-04.jpg) center/cover;
+      width: 90%;
+    }
+  }
+  > p {
+    position: absolute;
+    width: 50%;
+    margin: 30px auto;
+    text-align: left;
+    left: 37%;
+    color: settings.$grey;
+    line-height: 20px;
+  }
 }

@@ -1,1 +1,62 @@
 @use "./settings";
+.section3 {
+  height: 100vh;
+  background: settings.$brown;
+
+  .img-sec3 {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 80px 0;
+    gap: 25px;
+
+    .text-sec3 {
+      text-align: left;
+      line-height: 25px;
+      color: settings.$white;
+      h1 {
+        font-family: settings.$font1;
+        color: settings.$white;
+        font-weight: 100;
+        padding: 30px 0 20px;
+        font-size: 2rem;
+      }
+      h4 {
+        color: settings.$white;
+        padding-bottom: 20px;
+        font-weight: 300;
+      }
+      ul {
+        padding-bottom: 10px;
+
+        li {
+          font-weight: 100;
+        }
+      }
+      button {
+        background: settings.$brown;
+        color: settings.$white;
+        padding: 15px 20px;
+        border: 1px solid settings.$white;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+          background: settings.$white;
+          border: none;
+          color: settings.$brown;
+        }
+      }
+    }
+
+    .salon-3 {
+      background: url(/Theme-maison/assets/img/salon-3.jpg) center/cover;
+    }
+    .chambre-3 {
+      background: url(/Theme-maison/assets/img/chambre-03.jpg) center/cover;
+    }
+  }
+}

@@ -16,7 +16,7 @@
 
 body {
   background: rgb(255, 255, 255);
-  font-family: dosis, sans serif;
+  font-family: dosis;
   text-align: center;
 }
 
@@ -24,6 +24,7 @@ header {
   height: 971px;
 }
 header .nav-bar {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,8 +35,18 @@ header .nav-bar {
       justify-content: space-around;
   padding: 15px 0;
 }
+@media screen and (max-width: 732px) {
+  header .nav-bar {
+    padding-bottom: 50px;
+  }
+  header .nav-bar h1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
 header .nav-bar h1 {
-  font-family: cormor, sans serif;
+  font-family: cormor;
   font-size: 3rem;
   color: #24221e;
 }
@@ -50,15 +61,20 @@ header .nav-bar ul {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 732px) {
+  header .nav-bar ul {
+    display: none;
+  }
+}
 header .nav-bar ul li {
   font-size: 1.3rem;
   font-weight: 600;
-  font-family: cormor, sans serif;
+  font-family: cormor;
   color: #24221e;
   cursor: pointer;
 }
 header .header-content {
-  background: url(/Theme-maison/img/Maison.webp) center/cover fixed;
+  background: url(/Theme-maison/assets/img/Maison.webp) center/cover fixed;
   height: 716px;
   width: 100%;
   margin: 0 auto;
@@ -72,6 +88,13 @@ header .header-content .text-contain {
           align-items: center;
   width: 80%;
   margin: 0 auto;
+}
+@media screen and (max-width: 732px) {
+  header .header-content .text-contain {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
 }
 header .header-content .text-header {
   display: -webkit-box;
@@ -96,7 +119,7 @@ header .header-content .text-header {
   border-radius: 2px;
 }
 header .header-content .text-header h2 {
-  font-family: cormor, sans serif;
+  font-family: cormor;
   font-weight: 400;
   color: #b56953;
   width: 90%;
@@ -164,9 +187,14 @@ header .header-reserv {
   background: #b56953;
   padding: 50px 0;
   color: rgb(255, 255, 255);
-  font-family: cormor, sans serif;
+  font-family: cormor;
   width: 100%;
   margin: 0 auto;
+}
+@media screen and (max-width: 732px) {
+  header .header-reserv {
+    display: block;
+  }
 }
 header .header-reserv p {
   font-size: 2rem;
@@ -187,7 +215,238 @@ header .header-reserv button:hover {
   background: rgb(255, 255, 255);
   border: none;
 }
+@media screen and (max-width: 732px) {
+  header .header-reserv button {
+    margin: 15px auto;
+  }
+}
 
 .section1 {
+  position: relative;
   height: 877px;
+  color: #24221e;
+}
+.section1 .text-sec1 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  text-align: left;
+  padding: 60px 0 30px;
+  width: 80%;
+  margin: 0 auto;
+}
+.section1 .text-sec1 h4 {
+  color: #aeaeae;
+  line-height: 20px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 20px;
+}
+.section1 .text-sec1 p {
+  line-height: 20px;
+  color: #aeaeae;
+  margin-left: 35px;
+}
+.section1 .img-sec1 {
+  max-width: 1100px;
+  width: 80%;
+  height: 426px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+.section1 .img-sec1 .map {
+  background: url(/Theme-maison/assets/img/image-carte.png) center/cover;
+}
+.section1 .img-sec1 .salon-1 {
+  background: url(/Theme-maison/assets/img/salon-01.jpg) center/cover;
+  width: 90%;
+}
+.section1 .img-sec1 .chambre-4 {
+  background: url(/Theme-maison/assets/img/chambre-04.jpg) center/cover;
+  width: 90%;
+}
+.section1 > p {
+  position: absolute;
+  width: 50%;
+  margin: 30px auto;
+  text-align: left;
+  left: 37%;
+  color: #aeaeae;
+  line-height: 20px;
+}
+
+.section2 {
+  height: 100vh;
+  background: #f7f3ea;
+}
+.section2 .img-sec2 {
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 80px 0;
+  gap: 25px;
+}
+.section2 .img-sec2 .piscine {
+  background: url(/Theme-maison/assets/img/piscine-02.jpg) center/cover;
+}
+.section2 .img-sec2 .chambre1 {
+  background: url(/Theme-maison/assets/img/chambre-01.jpg) center/cover;
+}
+.section2 .img-sec2 .text-sec2 {
+  text-align: left;
+  line-height: 25px;
+}
+.section2 .img-sec2 .text-sec2 h2 {
+  font-family: dosis;
+  color: #b56953;
+  font-weight: 100;
+  padding: 30px 0 20px;
+  font-size: 2rem;
+}
+.section2 .img-sec2 .text-sec2 h4 {
+  color: #b56953;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+.section2 .img-sec2 .text-sec2 ul {
+  padding-bottom: 10px;
+}
+.section2 .img-sec2 .text-sec2 ul li {
+  font-weight: 100;
+}
+.section2 .img-sec2 .text-sec2 button {
+  background: #b56953;
+  color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  border: 1px solid rgb(255, 255, 255);
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.section2 .img-sec2 .text-sec2 button:hover {
+  opacity: 0.8;
+}
+
+.section3 {
+  height: 100vh;
+  background: #b56953;
+}
+.section3 .img-sec3 {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 80px 0;
+  gap: 25px;
+}
+.section3 .img-sec3 .text-sec3 {
+  text-align: left;
+  line-height: 25px;
+  color: rgb(255, 255, 255);
+}
+.section3 .img-sec3 .text-sec3 h1 {
+  font-family: cormor;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  padding: 30px 0 20px;
+  font-size: 2rem;
+}
+.section3 .img-sec3 .text-sec3 h4 {
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+.section3 .img-sec3 .text-sec3 ul {
+  padding-bottom: 10px;
+}
+.section3 .img-sec3 .text-sec3 ul li {
+  font-weight: 100;
+}
+.section3 .img-sec3 .text-sec3 button {
+  background: #b56953;
+  color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  border: 1px solid rgb(255, 255, 255);
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.section3 .img-sec3 .text-sec3 button:hover {
+  background: rgb(255, 255, 255);
+  border: none;
+  color: #b56953;
+}
+.section3 .img-sec3 .salon-3 {
+  background: url(/Theme-maison/assets/img/salon-3.jpg) center/cover;
+}
+.section3 .img-sec3 .chambre-3 {
+  background: url(/Theme-maison/assets/img/chambre-03.jpg) center/cover;
+}
+
+.section4 {
+  height: 540px;
+}
+.section4 .container {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 80px 0;
+}
+.section4 .container .base-contain {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  color: #aeaeae;
+}
+.section4 .container .base-contain img {
+  padding: 0;
+}
+.section4 .container .base-contain h3 {
+  padding: 10px 0;
+  font-weight: 100;
+}
+.section4 .container .base-contain p {
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+footer {
+  height: 483px;
+  background: #f7f3ea;
+}
+footer .foot-contain {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  padding: 150px 0;
+  gap: 10px;
+}
+footer .foot-contain .lien {
+  padding-right: 150px;
+  width: 100%;
+  text-align: left;
+  line-height: 20px;
+}
+footer .foot-contain .lien h1 {
+  padding-bottom: 15px;
+  font-size: 2.5rem;
+}
+footer .foot-contain .lien h3 {
+  padding-bottom: 15px;
+}
+footer .foot-contain .lien ul li {
+  cursor: pointer;
+  text-decoration: underline;
+  padding-bottom: 5px;
 }/*# sourceMappingURL=index.css.map */

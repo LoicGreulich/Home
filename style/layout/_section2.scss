@@ -1,1 +1,60 @@
 @use "./settings";
+
+.section2 {
+  height: 100vh;
+  background: settings.$white2;
+
+  .img-sec2 {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 80px 0;
+    gap: 25px;
+
+    .piscine {
+      background: url(/Theme-maison/assets/img/piscine-02.jpg) center/cover;
+    }
+    .chambre1 {
+      background: url(/Theme-maison/assets/img/chambre-01.jpg) center/cover;
+    }
+
+    .text-sec2 {
+      text-align: left;
+      line-height: 25px;
+      h2 {
+        font-family: settings.$font2;
+        color: settings.$brown;
+        font-weight: 100;
+        padding: 30px 0 20px;
+        font-size: 2rem;
+      }
+      h4 {
+        color: settings.$brown;
+        padding-bottom: 20px;
+        font-weight: 300;
+      }
+      ul {
+        padding-bottom: 10px;
+
+        li {
+          font-weight: 100;
+        }
+      }
+      button {
+        background: settings.$brown;
+        color: settings.$white;
+        padding: 15px 20px;
+        border: 1px solid settings.$white;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

@@ -3,8 +3,18 @@ header {
   height: 971px;
 
   .nav-bar {
+    position: relative;
     @include settings.AlignChild(space-around);
     padding: 15px 0;
+
+    @media screen and (max-width: 732px) {
+      padding-bottom: 50px;
+      h1 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
 
     h1 {
       font-family: settings.$font1;
@@ -17,6 +27,10 @@ header {
       justify-content: space-around;
       align-items: center;
 
+      @media screen and (max-width: 732px) {
+        display: none;
+      }
+
       li {
         font-size: 1.3rem;
         font-weight: 600;
@@ -27,7 +41,7 @@ header {
     }
   }
   .header-content {
-    background: url(/Theme-maison/img/Maison.webp) center/cover fixed;
+    background: url(/Theme-maison/assets/img/Maison.webp) center/cover fixed;
     height: 716px;
     width: 100%;
     margin: 0 auto;
@@ -39,6 +53,12 @@ header {
       align-items: center;
       width: 80%;
       margin: 0 auto;
+
+      @media screen and (max-width: 732px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: left;
+      }
     }
 
     .text-header {
@@ -110,6 +130,10 @@ header {
     width: 100%;
     margin: 0 auto;
 
+    @media screen and (max-width: 732px) {
+      display: block;
+    }
+
     p {
       font-size: 2rem;
     }
@@ -128,6 +152,10 @@ header {
         color: settings.$brown;
         background: settings.$white;
         border: none;
+      }
+
+      @media screen and (max-width: 732px) {
+        margin: 15px auto;
       }
     }
   }
