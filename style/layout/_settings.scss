@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "cormor";
+  src: url(/Theme-maison/font/CormorantGaramond-Light.ttf);
+}
+
+@font-face {
+  font-family: "dosis";
+  src: url(/Theme-maison/font/Dosis-Medium.ttf);
+}
+
+$font1: cormor, sans serif;
+$font2: dosis, sans serif;
+$white: rgb(255, 255, 255);
+$white2: #f7f3ea;
+$brown: #b56953;
+$grey: #aeaeae;
+$black: #24221e;
+
+@mixin CenterChild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin AlignChild($space) {
+  display: flex;
+  align-items: center;
+  justify-content: ($space);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  background: $white;
+  font-family: $font2;
+  text-align: center;
+}

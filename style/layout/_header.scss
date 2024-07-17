@@ -1,0 +1,134 @@
+@use "./settings";
+header {
+  height: 971px;
+
+  .nav-bar {
+    @include settings.AlignChild(space-around);
+    padding: 15px 0;
+
+    h1 {
+      font-family: settings.$font1;
+      font-size: 3rem;
+      color: settings.$black;
+    }
+    ul {
+      width: 40%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      li {
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: settings.$font1;
+        color: settings.$black;
+        cursor: pointer;
+      }
+    }
+  }
+  .header-content {
+    background: url(/Theme-maison/img/Maison.webp) center/cover fixed;
+    height: 716px;
+    width: 100%;
+    margin: 0 auto;
+
+    .text-contain {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .text-header {
+      @include settings.CenterChild;
+      flex-direction: column;
+      text-align: left;
+      background: settings.$white;
+      opacity: 0.9;
+      padding: 80px 30px;
+      width: 70%;
+      margin: 0 auto;
+      border-radius: 2px;
+
+      h2 {
+        font-family: settings.$font1;
+        font-weight: 400;
+        color: settings.$brown;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2.8rem;
+      }
+
+      p {
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+        color: settings.$black;
+        margin-top: 15px;
+        line-height: 25px;
+      }
+    }
+    .input1 {
+      background: settings.$white;
+      padding: 15px 0;
+      opacity: 0.9;
+      @include settings.CenterChild;
+      justify-content: space-evenly;
+      border-radius: 2px;
+
+      input[type="date"] {
+        padding: 10px;
+        background: rgb(236, 236, 236);
+        border: none;
+      }
+
+      input[type="submit"] {
+        padding: 15px 30px;
+        color: settings.$brown;
+        background: none;
+        border: 1px solid settings.$brown;
+        cursor: pointer;
+
+        &:hover {
+          background: settings.$brown;
+          color: settings.$white;
+          border: none;
+          transition: 1s ease;
+        }
+      }
+    }
+  }
+  .header-reserv {
+    @include settings.CenterChild;
+    justify-content: space-evenly;
+    background: settings.$brown;
+    padding: 50px 0;
+    color: settings.$white;
+    font-family: settings.$font1;
+    width: 100%;
+    margin: 0 auto;
+
+    p {
+      font-size: 2rem;
+    }
+
+    button {
+      background: none;
+      padding: 15px 30px;
+      color: settings.$white;
+      border: 1px solid settings.$white;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 1s;
+      margin-left: -90px;
+
+      &:hover {
+        color: settings.$brown;
+        background: settings.$white;
+        border: none;
+      }
+    }
+  }
+}

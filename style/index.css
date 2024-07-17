@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "cormor";
+  src: url(/Theme-maison/font/CormorantGaramond-Light.ttf);
+}
+@font-face {
+  font-family: "dosis";
+  src: url(/Theme-maison/font/Dosis-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  font-family: dosis, sans serif;
+  text-align: center;
+}
+
+header {
+  height: 971px;
+}
+header .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px 0;
+}
+header .nav-bar h1 {
+  font-family: cormor, sans serif;
+  font-size: 3rem;
+  color: #24221e;
+}
+header .nav-bar ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .nav-bar ul li {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: cormor, sans serif;
+  color: #24221e;
+  cursor: pointer;
+}
+header .header-content {
+  background: url(/Theme-maison/img/Maison.webp) center/cover fixed;
+  height: 716px;
+  width: 100%;
+  margin: 0 auto;
+}
+header .header-content .text-contain {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+header .header-content .text-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  background: rgb(255, 255, 255);
+  opacity: 0.9;
+  padding: 80px 30px;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+header .header-content .text-header h2 {
+  font-family: cormor, sans serif;
+  font-weight: 400;
+  color: #b56953;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 2.8rem;
+}
+header .header-content .text-header p {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  color: #24221e;
+  margin-top: 15px;
+  line-height: 25px;
+}
+header .header-content .input1 {
+  background: rgb(255, 255, 255);
+  padding: 15px 0;
+  opacity: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 2px;
+}
+header .header-content .input1 input[type=date] {
+  padding: 10px;
+  background: rgb(236, 236, 236);
+  border: none;
+}
+header .header-content .input1 input[type=submit] {
+  padding: 15px 30px;
+  color: #b56953;
+  background: none;
+  border: 1px solid #b56953;
+  cursor: pointer;
+}
+header .header-content .input1 input[type=submit]:hover {
+  background: #b56953;
+  color: rgb(255, 255, 255);
+  border: none;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+header .header-reserv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #b56953;
+  padding: 50px 0;
+  color: rgb(255, 255, 255);
+  font-family: cormor, sans serif;
+  width: 100%;
+  margin: 0 auto;
+}
+header .header-reserv p {
+  font-size: 2rem;
+}
+header .header-reserv button {
+  background: none;
+  padding: 15px 30px;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-left: -90px;
+}
+header .header-reserv button:hover {
+  color: #b56953;
+  background: rgb(255, 255, 255);
+  border: none;
+}
+
+.section1 {
+  height: 877px;
+}/*# sourceMappingURL=index.css.map */
